@@ -1,7 +1,7 @@
-from flask import Blueprint
+from flask import Blueprint, jsonify
 
 routes = Blueprint('routes', __name__)
 
-@routes.route('/')
-def home():
-    return "Hello, World!"
+@routes.route('/tasks', methods=['GET'])
+def get_tasks():
+    return jsonify([])  # Returning an empty list as a placeholder
