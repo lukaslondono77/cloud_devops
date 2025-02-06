@@ -30,14 +30,12 @@ jobs:
         run: |
           echo 'Docker scan is not available in this environment. Skipping security scan.'
 
-      - name: Login to AWS ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
-
-      - name: Build, tag, and push Docker image
-        env:
-          ECR_REGISTRY: your-ecr-registry
-          ECR_REPOSITORY: your-repo
+      - name: Mock AWS Login Step
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:latest app
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          echo "Skipping AWS login step since this is a mock run."
+
+      - name: Mock Docker Build & Push
+        run: |
+          echo "Mocking Docker build and push steps."
+          echo "docker build -t mock-ecr-registry/mock-repo:latest app"
+          echo "docker push mock-ecr-registry/mock-repo:latest"
