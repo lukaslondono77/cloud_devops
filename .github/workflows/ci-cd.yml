@@ -28,7 +28,7 @@ jobs:
 
       - name: Docker security scan
         run: |
-          docker scan your-ecr-registry/your-repo:latest --accept-license
+          docker scan your-ecr-registry/your-repo:latest
 
       - name: Login to AWS ECR
         id: login-ecr
