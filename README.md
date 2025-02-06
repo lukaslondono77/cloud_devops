@@ -2,6 +2,7 @@
 [![CI/CD Pipeline](https://github.com/lukaslondono77/cloud_devops/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/lukaslondono77/cloud_devops/actions/workflows/ci-cd.yml)
 [![Lint](https://github.com/lukaslondono77/cloud_devops/actions/workflows/lint.yml/badge.svg)](https://github.com/lukaslondono77/cloud_devops/actions/workflows/lint.yml)
 [![Tests](https://github.com/lukaslondono77/cloud_devops/actions/workflows/tests.yml/badge.svg)](https://github.com/lukaslondono77/cloud_devops/actions/workflows/tests.yml)
+[![Deployment](https://github.com/lukaslondono77/cloud_devops/actions/workflows/deploy.yml/badge.svg)](https://github.com/lukaslondono77/cloud_devops/actions/workflows/deploy.yml)
 ## **Overview**
 This project is a **cloud-native SaaS (Software-as-a-Service) task management tool** built using modern **DevOps** and **cloud technologies**. It demonstrates a **real-world CI/CD pipeline**, **secure infrastructure automation**, and **scalable deployment**.
 
