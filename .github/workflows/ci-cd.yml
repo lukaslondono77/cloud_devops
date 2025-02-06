@@ -24,7 +24,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest tests/
+          PYTHONPATH=. pytest tests/
 
       - name: Docker security scan
         run: |
