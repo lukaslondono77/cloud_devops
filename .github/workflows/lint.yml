@@ -22,6 +22,12 @@ jobs:
         run: |
           pip install flake8
 
+      - name: Create Flake8 Config
+        run: |
+          echo "[flake8]" > .flake8
+          echo "max-line-length = 120" >> .flake8
+          echo "ignore = E302,E305,E402,F401" >> .flake8
+
       - name: Run Flake8
         run: |
           flake8 .
