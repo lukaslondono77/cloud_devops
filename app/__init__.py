@@ -2,4 +2,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-from app import routes  # Import your routes
+# Import routes only after the app instance is fully initialized
+from app.routes import routes  
+app.register_blueprint(routes)
