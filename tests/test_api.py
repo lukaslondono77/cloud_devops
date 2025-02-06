@@ -1,10 +1,5 @@
-import sys
-import os
 import pytest
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from app import app  # Now it should work!
+from app import app
 
 @pytest.fixture
 def client():
@@ -14,4 +9,4 @@ def client():
 
 def test_get_tasks(client):
     response = client.get('/tasks')
-    assert response.status_code == 200
+    assert response.status_code == 200, f"Expected 200, got {response.status_code} with body {response.data}"
