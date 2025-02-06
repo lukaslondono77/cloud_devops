@@ -1,0 +1,18 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Mock Deployment
+        run: |
+          echo "Deploying application..."
+          echo "This is a mock deployment. Replace with real deployment steps later."
